@@ -61,7 +61,8 @@ public String [] duplicateArray(){
 
         }
 
-        }return ("Numele "+nume+" s-a citit de "+count+" ori");
+        }System.out.println ("Numele "+nume+" s-a citit de "+count+" ori");
+        return nume + count;
 
 
 

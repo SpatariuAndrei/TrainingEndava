@@ -4,40 +4,45 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //  Curs1 curs1 = new Curs1();
-         Curs2 curs2 = new Curs2();
+         // Curs1 curs1 = new Curs1();
+        Curs2 curs2 = new Curs2();
+
 
         //  EX 1
-        //System.out.println(curs1.sum());
+        //curs1.sum();
 
         //EX 2
-        // System.out.println(curs1.printMaxNumber());
+        //  curs1.printMaxNumber();
 
         //EX 3
-        //System.out.println(curs1.divideResult());
+        // curs1.divideResult();
 
         //EX 4
-        //System.out.println(curs1.printPositiveAndNegative());
+        //curs1.printPositiveAndNegative();
 
         //EX5 While
-        //System.out.println(curs1.countPositiveAndNegative());
+        //curs1.countPositiveAndNegative();
 
-        //ex 5 DO While
-        //System.out.println(curs1.countPositiveAndNegativeDoWhile());
-        //ex 6 While
-        // System.out.println(curs1.sumOfInputValues());
+        //EX 5 DO While
+        // curs1.countPositiveAndNegativeDoWhile();
+
+        //EX 6 While
+        //curs1.sumOfInputValues();
 
         //EX 7 DO WHILE
-        //System.out.println(curs1.countInputNumbers());
+        // curs1.countInputNumbers();
 
         // EX 7 WHILE
-        //  System.out.println(curs1.countInputNumbersWhileMethod());
+        //curs1.countInputNumbersWhileMethod();
 
-//System.out.println(curs2.duplicateArray());
+//Curs 2
 
-//System.out.println(curs2.reverseArray());
-     //   System.out.println(curs2.readPopescu());
 
+//curs2.duplicateArray();
+
+//curs2.reverseArray();
+
+//curs2.readPopescu();
 
     }}
 

@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Curs1 {
 
+
 //Ex1
 
 public String  sum (){
@@ -16,7 +17,7 @@ public String  sum (){
 
 
     int sum =  a+b;
-
+    System.out.println ("Suma este " + sum);
     return ("Suma este " + sum);
 
 }
@@ -39,13 +40,14 @@ Scanner myInput = new Scanner(System.in);
     int divide = a/b;
 
     String result = "Rezultatul impartirii este:  " + divide + "  Rest  " + remainder;
+    System.out.println(result);
 
     return result;
 
 
 }
 //ex2
-    public String printMaxNumber() {
+    public int printMaxNumber() {
 
         Scanner myInput = new Scanner(System.in);
 
@@ -60,9 +62,11 @@ Scanner myInput = new Scanner(System.in);
         b = myInput.nextInt();
 
         if (a>b) {
-           return ("Maximul dintre a si b este: " + a);
+            System.out.println("Maximul dintre a si b este: " + a);
+           return (a);
         } else
-            return ("Maximul dintre a si b este: " + b);
+            System.out.println("Maximul dintre a si b este: " + b);
+            return (b);
 
     }
 //EX 4
@@ -90,12 +94,17 @@ public String printPositiveAndNegative(){
     }
 
     else if (a>=0 && b<0){
+        System.out.println(a +  " este numar pozitiv" + b + " este numar negativ");
         return (a +  " este numar pozitiv" + b + " este numar negativ");
     }
     else if (a<0 && b >= 0){
+        System.out.println(a +  " este numar negativ " + b + " este numar pozitiv");
         return (a +  " este numar negativ " + b + " este numar pozitiv");
     }
-    else  return (a +  " este numar negativ " + b + " este numar negativ");
+
+    else
+        System.out.println(a +  " este numar negativ " + b + " este numar negativ" );
+        return (a +  " este numar negativ " + b + " este numar negativ");
 }
 //ex 5
     public int countPositiveAndNegative(){
@@ -117,7 +126,8 @@ public String printPositiveAndNegative(){
             }
             else if (data > 0){
                 positive++;
-            }
+
+            } else break;
            data=input.nextInt();
         }
         System.out.println(positive + " positive numbers");
@@ -146,6 +156,8 @@ public String printPositiveAndNegative(){
             else if (data > 0){
                 positive++;
             }
+            else break;
+
             data=input.nextInt();
         }
         while (data !=0);
@@ -184,9 +196,8 @@ public String printPositiveAndNegative(){
 
         System.out.println("Au fost introduse  " +  count + " valori");
 
-        //  System.out.println(negative + " negative numbers");
-
         return data;
+
     }
     public int countInputNumbersWhileMethod(){
         Scanner input= new Scanner(System.in);
@@ -208,13 +219,14 @@ public String printPositiveAndNegative(){
             else if (data > 0){
                 count++;
             }
+
             data=input.nextInt();
         }
 
 
         System.out.println("Au fost introduse  " +  count + " valori");
 
-        //  System.out.println(negative + " negative numbers");
+
 
         return data;
     }
@@ -237,6 +249,7 @@ public String printPositiveAndNegative(){
 
          count = in.nextInt();
         }
+     System.out.println("Sum of input values is  " + sum);
 
 return sum;
 }
